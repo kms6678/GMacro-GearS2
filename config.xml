@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/Basic3" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="1EkqRJiSCy.Basic3" package="1EkqRJiSCy" required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://developer.samsung.com/tizen/feature/network.accessory_protocol"/>
+    <feature name="http://tizen.org/feature/web.service"/>
+    <icon src="gmacro.png" height="117" width="117"/>
+    <tizen:metadata key="AccessoryServicesLocation" value="res/xml/accessoryservices.xml"/>
+    <name>GMacro</name>
+    <tizen:privilege name="http://developer.samsung.com/privilege/accessoryprotocol"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:profile name="wearable"/>
+    <tizen:service id="1EkqRJiSCy.service1" on-boot="true" auto-restart="true">
+        <tizen:content src="js/service1.js"/>
+        <tizen:name>WebServiceApplication1</tizen:name>
+        <tizen:icon src="icon1.png"/>
+        <tizen:description>WebServiceApplication1</tizen:description>
+    </tizen:service>
+</widget>
